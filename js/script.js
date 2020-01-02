@@ -16,3 +16,21 @@ let OnePlusOne = new Phone('One Plus', 1526, 'black', 'Snapdragon 801', '3GB');
 iPhone6S.printInfo();
 SamsungGalaxyS6.printInfo();
 OnePlusOne.printInfo();
+
+function Button(text){
+    this.text = text || 'Hello';
+    }
+    Button.prototype = {
+      create: function(){
+        let self = this;
+        this.element = document.createElement('button');
+        this.element.innerText = this.text;
+        this.element.addEventListener('click', function() {
+          alert(self.text);
+        });
+        document.body.appendChild(this.element);
+      }
+    }
+    let btn1 = new Button ('Hello!');
+    btn1.create();
+    
