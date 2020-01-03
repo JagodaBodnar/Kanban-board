@@ -1,0 +1,77 @@
+body{
+    background-image: url('../images/chalkboard.jpg');
+    text-align: center;
+    background-size: cover;
+    color: #fff;
+    font-family: 'Nunito', sans-serif;
+}
+.main-header{
+    color: #EA7A28;
+}
+.column-container{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+.column-card-list{
+    list-style: none;
+    padding: 0;
+    min-height: 200px;;
+}
+.create-column{
+    color: #fff;
+    background-color: #EA7A28;
+    border: #EA7A28 solid;
+    border-radius: 2px;
+    outline: none;
+}
+.create-column::before{
+    font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f65e";
+    color: #fff;
+    font-size: 15px;
+    padding-right: 3px;
+}
+.add-card, .btn-delete{
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+.btn-delete::before{
+    font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f1f8";
+    color: #fff;
+    font-size: 20px;
+} 
+.add-card::before{
+    font-family: "Font Awesome 5 Free"; font-weight: 900; content: "\f055";
+    font-size: 20px;
+    color: #fff;
+}
+.card{
+    background-image: url('../images/sticky-note.png');
+    background-size: cover;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    font-family: 'Permanent Marker', cursive;
+    font-size: 20px;
+    position: relative;
+    color: #000;
+    .card-description{
+        padding: 5px;
+    }
+    .btn-delete{
+        background: none;
+        border:none;
+        position: absolute;
+        bottom: 20px;
+        left: 150px;
+    }
+    .btn-delete::before{
+        color: #000;
+        font-size: 15px;
+    }
+}
+
